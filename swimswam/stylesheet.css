@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.hero {
+  background-color: #799078;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 5px solid #5f705f;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #5f705f;
+  margin-top: 2rem;
+}
+
+.tools {
+  list-style: none;
+  padding: 0;
+}
+
+.tools li {
+  background: #c8c7bb;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #799078;
+  font-weight: bold;
+}
+
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #e1e1e1;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.tools {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tools li {
+  display: inline-block;
+  background: #adb9ad;
+  color: white;
+  margin: 0.25rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+
+.process img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.process p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+
+
+body.dark-mode p,
+body.dark-mode .section-intro {
+  color: #4A4A4A; /* slightly more contrast than #ddd */
+}
+
+
+body.dark-mode h2,
+body.dark-mode h1 {
+  color: #5f705f;
+}
+
+body.dark-mode h3
+ {
+  color: #7D8F69;
+}
+
+
+
