@@ -117,4 +117,14 @@ body.dark-mode h3
 }
 
 
+/* Navigation Bar */
+body.dark-mode nav {
+  background-color: #2b2b2b;
+}
+body.dark-mode a {
+  color: #c0ffc0;
+}
+
+
+
 
