@@ -1,118 +1,96 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Humanity – Mobile App</title>
-  <link rel="stylesheet" href="stylesheet.css"> <!-- 👈 Add your stylesheet here -->
-
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<div class="container">
-  <h2>Humanity – Mobile App for Safety and Awareness</h2>
-  <p><strong>Project Overview</strong></p>
-  <p>
-    Humanity is a mobile-first app designed to raise awareness around human trafficking and empower users to take action safely. Built with a trauma-informed approach, the app enables anonymous reporting, offers educational courses, and connects users with verified resources.
-  </p>
-
-  <ul>
-    <li>Anonymous Reporting</li>
-    <li>Location-Based Hotspot Map</li>
-    <li>Free Learning Courses</li>
-    <li>Custom Panic Button Setup</li>
-  </ul>
-
-  <p><strong>Design Tools</strong>: Figma, UX Storyboarding, Wireframing</p>
-  <p><strong>Status</strong>: Wireframes Complete, Hi-Fi UI In Progress</p>
-
-  <!-- <a href="https://www.figma.com/file/ZZNyNW3B9Kj1mMaMcwyui0/Humanity-Wireframes">🔗 View Wireframes in Figma</a> -->
-
-  <h3>Design Process</h3>
-
-  <h4>User Personas</h4>
-  <p>
-    To guide the design, I developed personas for three core audiences: a college student, a concerned parent, and a social worker. These shaped the app’s core flows—like incident reporting, learning modules, and map alerts.
-  </p>
-
-  <h4>Wireframes</h4>
-  <p>
-    I created low- to mid-fidelity wireframes focusing on clear user flow, privacy, and mobile-first accessibility. Screens include Home, Map, Report, Learn, Profile, and custom safety settings.
-  </p>
-  <div class="scroll-box">
-    <div class="wireframe-item">
-      <img src="images/Humanity Home.png" alt="Wireframe of Humanity Home Page">
-      <p class="label">Home</p>
-    </div>
-
-    <div class="wireframe-item">
-      <img src="images/Humanity Map.png" alt="Wireframe of Humanity Map Page">
-      <p class="label">Map Overview</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Humanity Map Report Details.png" alt="Wireframe of Humanity Map Report Page">
-      <p class="label">Map Report Detail</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Humanity Learn.png" alt="Wireframe of Humanity Learn Page">
-      <p class="label">Learn Hub</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Humanity Learn Article.png" alt="Wireframe of Humanity Learn Article Page">
-      <p class="label">Learn Article View</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Humanity Learn Course.png" alt="Wireframe of Humanity Learn Course Page">
-      <p class="label">Courses Hub</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Humanity Learn Course Detail Page.png" alt="Wireframe of Humanity Learn Course Detail Page">
-      <p class="label">Course Module Detail</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Humanity Report.png" alt="Wireframe of Humanity Report Page">
-      <p class="label">Report Dashboard</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Submit Report 1.png" alt="Wireframe of Humanity Submit Report Step 1 Page">
-      <p class="label">Submit Report – Step 1</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Submit Report 2.png" alt="Wireframe of Humanity Submit Report Step 2 Page">
-      <p class="label">Submit Report – Step 2</p>
-    </div>
-    <div class="wireframe-item">
-      <img src="images/Submit Report 3.png" alt="Wireframe of Humanity Submit Report Step 3 Page">
-      <p class="label">Submit Report – Step 3</p>
-    </div>
+<!-- Navigation Bar -->
+<nav>
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="dark-toggle">
+        <label class="toggle-switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </li>
+    </ul>
   </div>
+</nav>
 
+<!-- Hero Header -->
+<header class="hero">
+  <h1>Humanity – Mobile App</h1>
+  <p class="subtitle">A mobile-first platform for anonymous reporting and safety education.</p>
+</header>
 
+<!-- Main Content Container -->
+<main class="container">
+  <section class="intro">
+    <h2>Project Overview</h2>
+    <p><strong>Humanity</strong> is an original mobile app concept designed to raise awareness around human trafficking and empower users to act safely.
+      Built with a trauma-informed approach, it includes anonymous reporting tools, educational resources, and location-based safety features.
+      This project is currently in active development and intended for real-world deployment. </p>
 
-  <h3>User Personas</h3>
-  <p>
-    To ensure the Humanity app met the needs of real users in high-stakes situations, I developed three distinct personas: a college student, a protective parent, and a trauma-informed social worker.
-    These personas were informed by research into human trafficking awareness behaviors, reporting challenges, and educational needs. Each one helped shape key design decisions—from how anonymity was handled in the reporting flow,
-    to how content was organized in the Learn section, to how local alerts and resources were prioritized in the map experience.
-  </p>
+    <ul class="tools">
+      <li>Figma</li>
+      <li>UX Storyboarding</li>
+      <li>Wireframing</li>
+    </ul>
+  </section>
 
+  <hr style="border: none; height: 1px; background: #ddd; margin: 2rem 0;" />
 
-  <div class="persona-gallery">
-    <img src="images/valeria.png" alt="Persona profile for Valeria, a college student user of the Humanity app">
-    <img src="images/luis.png" alt="Persona profile for Luis, a protective parent">
-    <img src="images/maya.png" alt="Persona profile for Maya, a trauma-aware social worker">
-  </div>
+  <section class="section-box">
+    <h2>Wireframes</h2>
+    <p class="section-intro">Designed with accessibility and safety in mind, the wireframes prioritize mobile usability, anonymous flows, and clear calls to action.</p>
+    <div class="scroll-box">
+      <!-- Repeatable item format -->
+      <div class="wireframe-item">
+        <img src="images/Humanity Home.png" alt="Wireframe of Humanity Home Page">
+        <p class="label">Home</p>
+      </div>
+      <div class="wireframe-item">
+        <img src="images/Humanity Map.png" alt="Map wireframe">
+        <p class="label">Map</p>
+      </div>
+      <div class="wireframe-item">
+        <img src="images/Humanity Report.png" alt="Report Dashboard">
+        <p class="label">Report</p>
+      </div>
+      <div class="wireframe-item">
+        <img src="images/Humanity Learn Course Detail Page.png" alt="Course Detail">
+        <p class="label">Course Detail</p>
+      </div>
+    </div>
+  </section>
 
+  <section>
+    <h2>User Personas</h2>
+    <p>Three distinct personas helped guide design choices: a college student, a protective parent, and a trauma-informed social worker. Each focused on different usage flows within the app—like learning, alerting, and reporting.</p>
+    <div class="persona-gallery">
+      <img src="images/valeria.png" alt="Persona: Valeria">
+      <img src="images/luis.png" alt="Persona: Luis">
+      <img src="images/maya.png" alt="Persona: Maya">
+    </div>
+  </section>
 
-  <h4>Next Steps</h4>
-  <p>
-    With user personas, journey maps, and wireframes now complete, the Humanity project is moving into the high-fidelity UI design phase.
-    Upcoming work will focus on developing a cohesive visual style guide, applying accessible color schemes, and building polished screens in Figma.
-    These designs will be used to create an interactive prototype and finalize the full case study for portfolio presentation. Stay tuned—this project is still actively in progress!
-  </p>
-</div>
+  <section>
+    <h2>Next Steps</h2>
+    <p>With research and wireframes complete, the next phase includes developing a visual style guide, building hi-fi prototypes in Figma, and refining the UX for portfolio presentation.</p>
+  </section>
+</main>
+
+<script src="../script.js"></script>
 </body>
 </html>
-
-

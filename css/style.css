@@ -282,10 +282,10 @@ section {
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 200px; /*auto*/
   border-radius: 8px;
-  margin-bottom: 0.75rem;
- /* object-fit: cover;*/
+  /*margin-bottom: 0.75rem;*/
+  object-fit: cover;
 }
 
 .project-card h3 {
