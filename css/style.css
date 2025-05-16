@@ -1,4 +1,29 @@
-/* Main/Overall Pages */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main/Overall Pages*/
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +33,8 @@
 body {
 
   font-family: 'Open Sans', sans-serif;
-  background-color: #F7F5F2; /* Soft sand */
-  color: #4A4A4A; /* Deep gray text */
+  background-color: #F7F5F2; /* Soft sand*/
+  color: #4A4A4A; /* Deep gray text*/
   line-height: 1.6;
 }
 
@@ -51,7 +76,7 @@ nav {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: #7D8F69; /* Muted olive underline */
+  background: #7D8F69; /* Muted olive underline*/
   transition: width 0.3s ease;
   transform: rotate(0deg);
 }
@@ -62,7 +87,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #7D8F69; /* Subtle color change on hover */
+  color: #7D8F69; /* Subtle color change on hover*/
 }
 
 
@@ -70,7 +95,7 @@ nav {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #7D8F69; /* Muted olive */
+  background-color: #7D8F69; /* Muted olive*/
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -91,9 +116,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh; /* Makes hero section almost full screen */
+  height: 90vh; /* Makes hero section almost full screen*/
   text-align: center;
-  background-color: #A8BDB0; /* Sage green */
+  background-color: #A8BDB0; /* Sage green*/
   color: #ffffff;
   padding: 100px 20px;
 
@@ -106,7 +131,7 @@ section {
 }
 
 #hero h1 {
-  font-size: 3rem; /* Bigger font */
+  font-size: 3rem; /* Bigger font*/
   margin-bottom: 20px;
 }
 
@@ -118,7 +143,7 @@ section {
 .button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #7D8F69; /* Muted olive */
+  background-color: #7D8F69; /* Muted olive*/
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
@@ -127,7 +152,7 @@ section {
 }
 
 .button:hover {
-  background-color: #5F705F; /* Darker green on hover */
+  background-color: #5F705F; /* Darker green on hover*/
 }
 
 
@@ -138,18 +163,18 @@ section {
   width: 100px;
   height: 100px;
   background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 80%);
-  pointer-events: none; /* So it doesn't block clicking */
+  pointer-events: none; /* So it doesn't block clicking*/
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: top 0.1s ease, left 0.1s ease;
-  z-index: 1; /* Behind nav and hero content but in front of background */
+  z-index: 1; /* Behind nav and hero content but in front of background*/
 }
 
 
 /*About Page*/
 #about {
   padding: 80px 20px;
-  background-color: #F7F5F2; /* Light neutral background */
+  background-color: #F7F5F2; /* Light neutral background*/
   color: #4A4A4A;
   text-align: center;
 }
@@ -163,11 +188,11 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
-  /*display: flex;
+  /*display: flex;*/
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-  align-items: flex-start;*/
+  align-items: flex-start;
 }
 
 .about-top{
@@ -212,7 +237,7 @@ section {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 50%; /* Makes it a circle */
+  border-radius: 50%; /* Makes it a circle*/
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -221,10 +246,10 @@ section {
   margin-top: 30px;
   font-style: italic;
   font-size: 1.4rem;
-  color: #7D8F69; /* Olive tone */
-  background-color: #f1f5f0; /* Very soft green tint background */
+  color: #7D8F69; /* Olive tone*/
+  background-color: #f1f5f0; /* Very soft green tint background*/
   padding: 15px 20px;
-  border-left: 4px solid #A8BDB0; /* Sage green accent line */
+  border-left: 4px solid #A8BDB0; /* Sage green accent line*/
   display: inline-block;
   margin-bottom: 40px;
 }
@@ -232,7 +257,7 @@ section {
 
 .current-project {
   background-color: #ffffff;
-  border: 2px solid #A8BDB0; /* Sage green border */
+  border: 2px solid #A8BDB0; /* Sage green border*/
   padding: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -242,7 +267,7 @@ section {
 }
 
 .current-project h2 {
-  color: #7D8F69; /* Muted olive heading */
+  color: #7D8F69; /* Muted olive heading*/
   margin-bottom: 10px;
 }
 
@@ -250,7 +275,6 @@ section {
 
 
 /* projects page*/
-
 #projects{
   background-color: #f1f5f0;
   padding: 60px 20px;
@@ -299,9 +323,9 @@ section {
 }
 
 .project-card:hover {
-  /*background-color: #A8BDB0; /* Sage green
+  /*background-color: #A8BDB0; /* Sage green*/
   color: #ffffff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
 
@@ -373,13 +397,13 @@ input, textarea, button {
 }
 
 .section-intro {
- margin-bottom: 40px;
+  margin-bottom: 40px;
   color: #7D8F69;
   font-size: 1.1rem;
   text-align: center;
 }
 
-/* Resume Sections */
+/* Resume Sections*/
 .resume-skills,
 .resume-experience,
 .resume-education,
@@ -395,7 +419,7 @@ input, textarea, button {
 
 
 
-/* Headings inside Resume Section */
+/* Headings inside Resume Section*/
 #resume h3 {
   color: #7D8F69;
   font-size: 1.2rem;
@@ -405,7 +429,7 @@ input, textarea, button {
   text-align: left;
 }
 
-/* Skill Tags */
+/* Skill Tags*/
 .resume-skills ul {
   display: flex;
   flex-wrap: wrap;
@@ -427,25 +451,25 @@ input, textarea, button {
   white-space: nowrap;
 }
 
-/* Resize and color icons inside bubbles */
+/* Resize and color icons inside bubbles*/
 .resume-skills li i {
   font-size: 1.1rem;
 
 }
 
 
-/* Brand colors for each icon */
-.devicon-java-plain     { color: #007396; }    /* Java blue */
-.devicon-python-plain  { color: #3776AB; }    /* Python blue */
-.devicon-mysql-plain   { color: #4479A1; }    /* MySQL blue */
-.devicon-html5-plain   { color: #E34F26; }    /* HTML5 orange */
-.devicon-css3-plain    { color: #1572B6; }    /* CSS3 blue */
-.devicon-javascript-plain { color: #F7DF1E; } /* JS yellow */
-.devicon-git-plain     { color: #F05032; }    /* Git orange */
-.devicon-docker-plain  { color: #2496ED; }    /* Docker whale blue */
-.devicon-kubernetes-plain { color: #326CE5; } /* Kubernetes blue */
-.devicon-linux-plain   { color: #FCC624; }    /* Linux gold */
-.devicon-figma-plain   { color: #F24E1E; }    /* Figma coral */
+/* Brand colors for each icon*/
+.devicon-java-plain     { color: #007396; }    /* Java blue*/
+.devicon-python-plain  { color: #3776AB; }    /* Python blue*/
+.devicon-mysql-plain   { color: #4479A1; }    /* MySQL blue*/
+.devicon-html5-plain   { color: #E34F26; }    /* HTML5 orange*/
+.devicon-css3-plain    { color: #1572B6; }    /* CSS3 blue*/
+.devicon-javascript-plain { color: #F7DF1E; } /* JS yellow*/
+.devicon-git-plain     { color: #F05032; }    /* Git orange*/
+.devicon-docker-plain  { color: #2496ED; }    /* Docker whale blue*/
+.devicon-kubernetes-plain { color: #326CE5; } /* Kubernetes blue*/
+.devicon-linux-plain   { color: #FCC624; }    /* Linux gold*/
+.devicon-figma-plain   { color: #F24E1E; }    /* Figma coral*/
 /*AWS*/
 .fa-cloud {
   color: #FF9900;
@@ -453,7 +477,7 @@ input, textarea, button {
   margin-right: 6px;
 }
 .devicon-react-original {
-  color: #61DAFB; /* React blue */
+  color: #61DAFB; /* React blue*/
   font-size: 1.1rem;
   margin-right: 6px;
 }
@@ -461,7 +485,7 @@ input, textarea, button {
 
 
 
-/* List Formatting */
+/* List Formatting*/
 .resume-experience ul,
 .resume-education ul,
 .resume-learning ul {
@@ -475,7 +499,7 @@ input, textarea, button {
   margin-bottom: 10px;
 }
 
-/* Extra spacing for grouped content */
+/* Extra spacing for grouped content*/
 .resume-education {
   border-top: 1px solid #ddd;
   padding-top: 30px;
@@ -501,7 +525,7 @@ input, textarea, button {
 
 
 
-/*Contact Page */
+/*Contact Page*/
 
 #contact {
   max-width: 700px;
@@ -600,7 +624,7 @@ input, textarea, button {
 
 
 
-/* Dark Mode Toggle  */
+/* Dark Mode Toggle*/
 
 
 .dark-toggle{
@@ -674,13 +698,13 @@ body.dark-mode .toggle-label{
   color: #c0ffc0;
 }
 
-/* Global dark mode background and text */
+/* Global dark mode background and text*/
 body.dark-mode {
   background-color: #1e1e1e;
   color: #f0f0f0;
 }
 
-/* Navigation Bar */
+/* Navigation Bar*/
 body.dark-mode nav {
   background-color: #2b2b2b;
 }
@@ -688,7 +712,7 @@ body.dark-mode a {
   color: #c0ffc0;
 }
 
-/* Hero Section */
+/* Hero Section*/
 body.dark-mode #hero {
   background-color: #2a2a2a;
   color: #f0f0f0;
@@ -700,7 +724,7 @@ body.dark-mode #hero .button:hover {
   background-color: #809774;
 }
 
-/* Sections */
+/* Sections*/
 body.dark-mode #resume,
 body.dark-mode #contact,
 body.dark-mode .project-card,
@@ -733,7 +757,7 @@ body.dark-mode .current-project h2 {
 
 
 
-/* Forms */
+/* Forms*/
 body.dark-mode input,
 body.dark-mode textarea {
   background-color: #333;
@@ -741,7 +765,7 @@ body.dark-mode textarea {
   border: 1px solid #888;
 }
 
-/* Buttons */
+/* Buttons*/
 body.dark-mode .button,
 body.dark-mode button {
   background-color: #657c5a;
@@ -752,7 +776,7 @@ body.dark-mode button:hover {
   background-color: #809774;
 }
 
-/* Toggle Switch */
+/* Toggle Switch*/
 body.dark-mode .slider {
   background-color: #7D8F69;
 }
@@ -770,11 +794,11 @@ textarea {
 
 
 
-/*auto git */
+/*auto git*/
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap instead of overflow */
-  justify-content: center; /* Or space-between, etc. */
+  flex-wrap: wrap; /* Allows items to wrap instead of overflow*/
+  justify-content: center; /* Or space-between, etc.*/
 }
 .project-grid {
   display: grid;
@@ -788,7 +812,7 @@ textarea {
 
 body.dark-mode p,
 body.dark-mode .section-intro {
-  color: #ccc; /* slightly more contrast than #ddd */
+  color: #ccc; /* slightly more contrast than #ddd*/
 }
 
 body.dark-mode h3,
@@ -796,6 +820,3 @@ body.dark-mode h2,
 body.dark-mode h1 {
   color: #f0f0f0;
 }
-
-
-
