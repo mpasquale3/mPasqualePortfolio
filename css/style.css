@@ -90,6 +90,27 @@ nav {
   color: #7D8F69; /* Subtle color change on hover*/
 }
 
+/* Make nav links shrink instead of overflowing on small screens */
+.nav-links {
+  flex-wrap: nowrap;   /* Force one line */
+}
+
+.nav-links li {
+  flex: 1 1 auto;      /* Allow each link to shrink/grow */
+  min-width: 0;        /* Prevent overflow */
+}
+
+.nav-links li a {
+  white-space: nowrap; /* Keep link text on one line */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 10px;  /* Reduce gap on mobile to save space */
+  }
+}
+
+
 
 .button {
   display: inline-block;
@@ -121,9 +142,73 @@ section {
   background-color: #A8BDB0; /* Sage green*/
   color: #ffffff;
   padding: 100px 20px;
-
-
 }
+
+
+
+
+/* Hero Section */
+#hero {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Makes it responsive on smaller screens */
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 40px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-roles {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero-text .button {
+  display: inline-block;
+  background-color: #7D8F69;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text .button:hover {
+  background-color: #657c5a;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* optional: gives the image a soft edge */
+}
+
 
 @keyFrames fadeIn{
   0% {opacity: 0;}
@@ -169,6 +254,14 @@ section {
   transition: top 0.1s ease, left 0.1s ease;
   z-index: 1; /* Behind nav and hero content but in front of background*/
 }
+
+.hero-signature {
+  font-style: italic;
+  font-size: 0.9rem; /* a bit smaller than body text */
+  color: #666; /* or any soft color that matches your palette */
+  margin-top: 1rem; /* add space above so it doesn’t hug the button */
+}
+
 
 
 /*About Page*/
@@ -537,6 +630,69 @@ input, textarea, button {
   text-align: center;
   color: #4A4A4A;
 }
+
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #4a4a4a;
+}
+
+.contact-section p {
+  margin-bottom: 2rem;
+  color: #4a4a4a;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+}
+
+.contact-form button {
+  background-color: #7a8e6c; /* adjust to match your green */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #5f705f; /* slightly darker for hover */
+}
+
+.contact-reachout {
+  margin-top: 1rem;
+  color: #4a4a4a;
+}
+
+.contact-reachout a {
+  color: #7a8e6c;
+  text-decoration: none;
+}
+
+.contact-reachout a:hover {
+  text-decoration: underline;
+}
+
 
 #contact h2 {
   color: #7D8F69;

@@ -1,48 +1,30 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Contact | McKenna Pasquale </title>
+  <title>Contact | McKenna Pasquale</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-<!-- Add your site or application content here -->
-
-
-
-
-
 <!-- Navigation Bar -->
 <nav>
   <div class="nav-container">
-
     <ul class="nav-links">
-
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="resume.html">Resume</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li class="dark-toggle">
-
         <label class="toggle-switch">
           <input type="checkbox" id="dark-mode-toggle">
           <span class="slider round"></span>
@@ -52,35 +34,23 @@
   </div>
 </nav>
 
-
-
-
-
 <!-- Contact Section -->
-<section id="contact">
+<section class="contact-section">
   <h2>Let's Connect</h2>
-  <p class="section-intro">Whether you’re looking to collaborate, want to discuss a project, or just want to say hi — I’d love to hear from you!</p>
+  <p>Whether you’re looking to collaborate, want to discuss a project, or just want to say hi — I’d love to hear from you!</p>
 
-  <form>
-    <input type="text" placeholder="Your Name" maxLength="50" required>
-    <input type="email" placeholder="Your Email" maxLength="100" required>
-    <textarea id="message" placeholder="Your Message" maxLength="1000" required></textarea>
-    <div id="char-count">0 / 1000</div>
+  <form action="https://formspree.io/f/xrbkdjpa" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" maxlength="1000" required></textarea>
     <button type="submit">Send Message</button>
   </form>
 
-  <p id="form-response" class="hidden">Thanks! I’ll be in touch soon.</p>
-
-
-  <div class="contact-links">
-    <p>Or reach out via:</p>
+  <p class="contact-reachout">
+    Or reach out via:
     <a href="mailto:mckenna.j.pasquale@gmail.com">📧 Email</a> |
-    <a href="https://github.com/mpasquale3" target="_blank">🔗GitHub</a>
-  </div>
 
+  </p>
 </section>
-
-<script src="script.js"></script>
 </body>
-
 </html>
