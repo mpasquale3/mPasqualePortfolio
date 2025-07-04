@@ -39,10 +39,15 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;  /* <- Add the missing semicolon! */
+  z-index: 999;
   background-color: #ffffff;
   padding: 20px 0;
   box-shadow: 0 1px 5px rgba(0,0,0,0.05);
 }
+
 
 .nav-container {
   display: flex;
@@ -158,7 +163,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* Makes it responsive on smaller screens */
+  flex-wrap: wrap;
 }
 
 .hero-text {
@@ -168,8 +173,8 @@ section {
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .hero-roles {
@@ -183,18 +188,19 @@ section {
   line-height: 1.5;
 }
 
-.hero-text .button {
+.button {
   display: inline-block;
-  background-color: #7D8F69;
-  color: #fff;
   padding: 12px 24px;
-  border-radius: 6px;
+  background-color: #7D8F69;
+  color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
-.hero-text .button:hover {
-  background-color: #657c5a;
+.button:hover {
+  background-color: #5F705F;
 }
 
 .hero-image {
@@ -206,40 +212,15 @@ section {
 .hero-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px; /* optional: gives the image a soft edge */
+  border-radius: 12px;
 }
 
-
-@keyFrames fadeIn{
-  0% {opacity: 0;}
-  100% { opacity: 1;}
+.hero-signature {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
 }
-
-#hero h1 {
-  font-size: 3rem; /* Bigger font*/
-  margin-bottom: 20px;
-}
-
-#hero p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #7D8F69; /* Muted olive*/
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #5F705F; /* Darker green on hover*/
-}
-
 
 #glow {
   position: absolute;
@@ -248,19 +229,48 @@ section {
   width: 100px;
   height: 100px;
   background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 80%);
-  pointer-events: none; /* So it doesn't block clicking*/
+  pointer-events: none;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: top 0.1s ease, left 0.1s ease;
-  z-index: 1; /* Behind nav and hero content but in front of background*/
+  z-index: 1;
 }
 
-.hero-signature {
-  font-style: italic;
-  font-size: 0.9rem; /* a bit smaller than body text */
-  color: #666; /* or any soft color that matches your palette */
-  margin-top: 1rem; /* add space above so it doesn’t hug the button */
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-text {
+    flex: 1 1 100%;
+    min-width: auto;
+    max-width: 90%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-roles,
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  #hero {
+    padding-top: 120px;
+  }
 }
+
 
 
 
