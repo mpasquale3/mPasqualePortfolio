@@ -274,13 +274,13 @@ input:checked + .slider::before {
 
 
 .about-facts ul {
-  list-style: none;   /* Remove the default bullets */
-  padding: 0;          /* Remove left indent */
-  margin: 0;           /* Optional: for tighter spacing */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .about-facts li {
-  margin-bottom: 10px; /* Space between your emoji facts */
+  margin-bottom: 10px;
 }
 
 .about-photo {

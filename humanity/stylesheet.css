@@ -137,30 +137,6 @@ img {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Dark Mode Overrides
-body.dark-mode {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-}
-
-body.dark-mode .container,
-body.dark-mode .scroll-box,
-body.dark-mode .persona-gallery img {
-  background-color: #2a2a2a;
-  color: #f0f0f0;
-}
-
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4 {
-  color: #c0ffc0;
-}
-
-body.dark-mode .wireframe-item .label {
-  background-color: #50677c;
-  border-color: #3d5168;
-}*/
 
 /* Global Background + Text */
 body.dark-mode {
@@ -182,7 +158,7 @@ body.dark-mode h4 {
 /* Paragraphs and intro text */
 body.dark-mode p,
 body.dark-mode .section-intro {
-  color: #4A4A4A; /* More contrast than #ddd */
+  color: #4A4A4A;
 }
 
 /* Navigation Bar */
@@ -432,7 +408,7 @@ body.dark-mode .current-project {
 }
 
 body.dark-mode .current-project h2 {
-  color: #c0ffc0; /* or any readable light green */
+  color: #c0ffc0;
 }
 
 
@@ -474,7 +450,7 @@ textarea {
 
 body.dark-mode p,
 body.dark-mode .section-intro {
-  color: #ccc; /* slightly more contrast than #ddd */
+  color: #ccc;
 }
 
 body.dark-mode h3,
