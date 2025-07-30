@@ -1,0 +1,170 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+  background-color: #799078;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 5px solid #5f705f;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #e1e1e1;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #5f705f;
+  margin-top: 2rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===========================
+   TOOLS TAGS
+=========================== */
+.tools {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tools li {
+  display: inline-block;
+  background: #adb9ad;
+  color: white;
+  margin: 0.25rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   IMAGES & MEDIA
+=========================== */
+img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+iframe {
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* ===========================
+   NAVIGATION BAR
+=========================== */
+nav {
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4A4A4A;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #7D8F69;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-links a:hover {
+  color: #7D8F69;
+}
+
+/* ===========================
+   DARK MODE (same as others)
+=========================== */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .hero {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .container {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode h2 {
+  color: #5f705f;
+}
+
+body.dark-mode .tools li {
+  background: #799078;
+}

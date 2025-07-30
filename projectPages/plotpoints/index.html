@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plot Points – Data Visualization & Analysis</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../projects.html">Projects</a></li>
+      <li><a href="../../resume.html">Resume</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+      <li class="dark-toggle">
+        <label class="toggle-switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Header -->
+<header class="hero">
+  <h1>Plot Points</h1>
+  <p class="subtitle">A data-driven deep dive into what makes books go viral on TikTok</p>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+
+  <!-- Video Presentation -->
+  <section class="video-section">
+    <h2>Video Presentation</h2>
+    <div class="video-container">
+      <iframe width="100%" height="500"
+              src="https://www.youtube.com/embed/4oeA768GTZI"
+              title="Plot Points - Video Presentation"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <hr style="border: none; height: 1px; background: #ddd; margin: 2rem 0;" />
+
+  <!-- Project Overview -->
+  <section class="intro">
+    <h2>Project Overview</h2>
+    <p><strong>Plot Points</strong> is my DIY API small data project exploring the cultural and commercial impact of BookTok.
+      Using a dataset of <strong>180 viral book titles</strong> from January–May 2025, I analyzed patterns in <strong>genres, diversity representation, adaptation trends, and emotional tropes</strong>
+      that fuel TikTok-driven book sales. Data was collected from my own feed and three additional reader personas to explore how TikTok’s algorithm shapes different viral trends.</p>
+
+    <ul class="tools">
+      <li>Python (pandas, requests)</li>
+      <li>Open Library API</li>
+      <li>TMDB API</li>
+      <li>Tableau Public</li>
+      <li>Excel</li>
+      <li>Canva</li>
+    </ul>
+  </section>
+
+  <hr style="border: none; height: 1px; background: #ddd; margin: 2rem 0;" />
+
+  <!-- Key Questions -->
+  <section>
+    <h2>Key Questions</h2>
+    <ul>
+      <li>What genres dominate BookTok’s viral lists?</li>
+      <li>How do adaptation buzz, diversity representation, and tropes influence engagement?</li>
+      <li>Do indie and self-published books thrive as much as traditionally published ones?</li>
+      <li>How do reader identity and preferences change the algorithm’s recommendations?</li>
+    </ul>
+  </section>
+
+  <!-- Reader Personas -->
+  <section>
+    <h2>Reader Personas</h2>
+    <p>I created four distinct reader profiles to analyze how BookTok recommendations differ across identities, interests, and communities:</p>
+    <ul>
+      <li><strong>Alex</strong> – Sci-fi thrillers & Afrofuturism</li>
+      <li><strong>Kenna</strong> – Romantasy, found family, morally gray characters</li>
+      <li><strong>Toni</strong> – Queer speculative fiction, magical realism, graphic novels</li>
+      <li><strong>Linda</strong> – Cozy mysteries, historical fiction, book club picks</li>
+    </ul>
+  </section>
+
+  <!-- Key Findings -->
+  <section>
+    <h2>Key Findings</h2>
+    <ul>
+      <li>Fantasy & Romantasy dominate viral trends, especially in series form.</li>
+      <li>Over 50% of viral books feature diverse representation.</li>
+      <li>Series drive more engagement than standalones.</li>
+      <li>Adaptation buzz fuels virality – even indie titles can land screen deals.</li>
+      <li>Viral momentum is reader-driven, not just marketing-led.</li>
+    </ul>
+  </section>
+
+  <!-- Challenges & Lessons -->
+  <section>
+    <h2>Challenges & Lessons Learned</h2>
+    <p>Working with small data and multiple APIs brought challenges:</p>
+    <ul>
+      <li>Messy metadata required extensive cleaning and custom mapping.</li>
+      <li>Some API responses were unreliable, requiring error handling and manual checks.</li>
+      <li>Defining tagging standards earlier would have streamlined the process.</li>
+    </ul>
+  </section>
+
+  <hr style="border: none; height: 1px; background: #ddd; margin: 2rem 0;" />
+
+  <!-- Links -->
+  <section>
+    <h2>Explore the Project</h2>
+    <ul>
+      <li><a href="https://github.com/mpasquale3/plotPoints" target="_blank">GitHub Repository</a></li>
+      <li><a href="assets/PlotPointsSlides.pdf" target="_blank">Presentation Slides (PDF)</a></li>
+      <li><a href="https://public.tableau.com/" target="_blank">Interactive Tableau Dashboard</a> (coming soon)</li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- Responsive Video CSS -->
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<script src="../script.js"></script>
+</body>
+</html>
